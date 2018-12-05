@@ -19,6 +19,10 @@ class App extends React.Component {
       {
         name: "Facebook",
         stockSymbol: "FB"
+      },
+      {
+        name: "Twitter",
+        stockSymbol: "TWTR"
       }
     ],
     showModal: false,
@@ -41,7 +45,7 @@ class App extends React.Component {
     const LineChartWithStockData = getStockData(LineChart);
     return (
       <div>
-        <h1>Stocks Rabin</h1>
+        <h1>Stocks</h1>
         <Table>
           {companies.map(company => (
             <Row
