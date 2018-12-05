@@ -5,9 +5,14 @@ jobs:
       - image: node:11
     steps:
       - checkout
+      - restore_cache:
+        key: node-v1-{{ .Branch }}-{{ checksum "package.json" }}
       - run:
           name: Installing Dependencies
           command: npm install
+      - save_cache:
+        paths: node_modules
+        key: node-v1-{{ .Branch }}-{{ checksum "package.json" }}
       - run:
           name: Running Tests
           command: npm test
