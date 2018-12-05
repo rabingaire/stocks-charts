@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table Gets Rendered 1`] = `
+<table>
+  <tbody>
+    <tr>
+      <td>
+        Apple
+      </td>
+      <td>
+        AAPL
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Facebook
+      </td>
+      <td>
+        FB
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
