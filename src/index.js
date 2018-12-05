@@ -13,7 +13,7 @@ class App extends React.Component {
   state = {
     companies: [
       {
-        name: "Apple",
+        name: "Apple Inc",
         stockSymbol: "AAPL"
       },
       {
